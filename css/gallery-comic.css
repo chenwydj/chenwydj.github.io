@@ -1,0 +1,290 @@
+body
+{
+	font-family: 'gandhi_sansregular', "微软雅黑";
+}
+.main
+{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 60px 10px 0 0;
+  margin-left:auto;
+  margin-right:auto;
+  width:600px
+}
+.well
+{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px;
+  width: 720px;
+  background-color: white;
+  border: 0px;
+  border-radius: 0px; 
+  -webkit-box-shadow:0 0 0px rgba(0, 0, 0, 0);  
+  -moz-box-shadow:0 0 0px rgba(0, 0, 0, 0);  
+  box-shadow:0 0 0px rgba(0, 0, 0, 0);  
+}
+.grid3-content{
+	margin-top: 0;
+}
+.grid3
+{
+	padding: 10px 0;
+}
+.well-gray{
+	background:#F5F5F5;
+}
+.name p{
+	padding: 10px 0;
+	font-size: 99%;
+}
+.name small{
+	font-size: 85%;
+}
+.name
+{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.info
+{
+  padding-bottom: 10px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  font-size: 100%;
+}
+.info img{	
+	padding: 10px 0;
+}
+.info p{
+	line-height: 1.2em;
+}
+.info ul{
+	padding-left: 40px;
+	list-style: disc;
+	padding-bottom: 10px;
+}
+.buttons
+{
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.popover {
+	max-width: 800px;
+}
+.btn-confirm {
+  margin-right: 8px;
+  padding: 0px 10px; 	
+}
+
+.btn-confirm {
+  color: #ffffff;
+  background-color: #2a323a;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+.btn-confirm:hover,
+.btn-confirm:focus,
+.btn-confirm:active,
+.btn-confirm.active,
+.open .dropdown-toggle.btn-confirm {
+  color: #ffffff;
+  background-color:#4dc9b0;
+}
+
+.btn-confirm:active,
+.btn-confirm.active,
+.open .dropdown-toggle.btn-confirm {
+  background-image: none;
+}
+
+.btn-confirm.disabled,
+.btn-confirm[disabled],
+fieldset[disabled] .btn-confirm,
+.btn-confirm.disabled:hover,
+.btn-confirm[disabled]:hover,
+fieldset[disabled] .btn-confirm:hover,
+.btn-confirm.disabled:focus,
+.btn-confirm[disabled]:focus,
+fieldset[disabled] .btn-confirm:focus,
+.btn-confirm.disabled:active,
+.btn-confirm[disabled]:active,
+fieldset[disabled] .btn-confirm:active,
+.btn-confirm.disabled.active,
+.btn-confirm[disabled].active,
+fieldset[disabled] .btn-confirm.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-confirm .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.portfolio-item .hover-bg {
+	height: 280px;
+}
+.grid1{
+	background:#46beca;
+}
+.grid1 h3{
+	padding-top:50px;
+	color: #353c44;
+	font-size:4em;
+}
+.grid1 p{
+	padding-top:30px;
+	color: #353c44;
+}
+.grid1-bottom {
+	background-image: url('../images/gallery/jjys-bottom.png');
+	background-repeat: no-repeat;
+	background-position:bottom center;
+	background-color: #46beca;
+	text-align:center;	
+	height: 280px;
+	padding-bottom:0px;
+	
+}
+/* ---- item elements ---- */
+.element-item {
+  position: relative;
+  float: left;
+}
+.portfolio-item .hover-bg{
+  height: auto;
+}
+#filters {
+	padding-top:0px;
+	padding-bottom:2px;
+}
+
+#filters button{
+	font-family: 'gandhi_sansregular', "微软雅黑"; 
+	font-size:1.5em;
+	vertical-align:middle ;
+	width:150px;
+	padding:5px 10px;
+	border:none;
+	background:none;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;	 
+}
+
+#filters button:focus{
+	outline: none;
+}
+
+#filters button:hover{
+	opacity:0.6;filter(alpha=60);
+}
+
+#filters button:active{
+	opacity:1;filter(alpha=100);
+	color: #555555;
+}
+
+.grid1 img {
+    background: none;
+    padding: 0px;
+    border-radius: 0;
+}
+
+.grid3{
+	background:#e7e6e6;
+}
+
+.grid1{
+	padding:20px 0;
+}
+.grid1-filter{
+	background:url('../images/gallery/jjys-filter.jpg');
+	background-size:auto 100%;
+	text-align:center;
+	padding: 4px 0 10px 0;
+}
+
+.grid1-filter h3{
+	font-size:2em;
+	font-weight:bold;
+	padding: 10px 0;
+	color:#ffffff;
+}
+
+.grid1-intro{
+	background:#fad22c;
+	text-align: center;
+}
+
+.button{
+	margin:0px;
+}
+
+.grid1-label{
+	background-image: url('../images/gallery/jjys-label.png');
+	background-repeat: no-repeat;
+	background-position:top center;
+	background-color: #e7e6e6;
+	text-align:center;	
+	height: 85px;
+}
+
+.grid1-filter h3{
+	font-size:1.8em;
+	font-weight:bold;
+	color:#ffffff;
+	padding:0px;
+}
+
+.grid1-filter small{
+	font-size:0.8em;
+	font-weight:bold;
+	color:#2a323a;
+}
+
+.grid1-label p{
+	font-size:1.8em;
+	font-weight:bold;
+	color:#2a323a;
+}
+
+.grid1-label small{
+	font-size:0.8em;
+	font-weight:bold;
+	color:#2a323a;
+}
+
+.grid1-intro-content{
+	width: 65%;
+	padding: 20px 0;
+	margin:0 auto;
+	text-align: left;
+}
+.grid1-link{
+	padding-top: 0px;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 1.2em;
+	background:#46beca;
+}
+td{
+	/*border:solid #add9c0; 
+	border-width:0px 1px 1px 0px; */
+	padding:5px 10px;
+	vertical-align: middle
+}
+/*
+table{
+	border:solid #add9c0; 
+	border-width:1px 0px 0px 1px;
+}*/

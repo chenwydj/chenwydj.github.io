@@ -1,0 +1,130 @@
+.main
+{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 60px 10px 0 0;
+  margin-left:auto;
+  margin-right:auto;
+  width:600px
+}
+.well
+{
+  font-family: 'gandhi_sansregular', "微软雅黑";
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 720px;
+  background-color: white;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, .1);  
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, .1);  
+  box-shadow:0 0 10px rgba(0, 0, 0, .1);  
+}
+.well-gray{
+	background:#F5F5F5;
+	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, .15);  
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, .15);  
+	box-shadow:0 0 10px rgba(0, 0, 0, .15); 
+}
+.grid3-header p{
+	font-family: 'gandhi_sansregular';
+	color: #2A323A;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	padding-bottom: 20px;
+}
+.name p{
+	padding: 10px 0;
+	font-size: 99%;
+}
+.name small{
+	font-size: 85%;
+}
+.name
+{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.info
+{
+  padding-bottom: 10px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  font-size: 100%;
+}
+.info img{	
+	padding: 10px 0;
+}
+.info p{
+	line-height: 1.2em;
+	text-align: justify;
+}
+.info ul{
+	padding-left: 40px;
+	list-style: disc;
+	padding-bottom: 10px;
+}
+.buttons
+{
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.popover {
+	max-width: 800px;
+}
+.btn-confirm {
+  margin-right: 8px;
+  padding: 0px 10px;;
+}
+
+.btn-confirm {
+  color: #ffffff;
+  background-color: #2a323a;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+.btn-confirm:hover,
+.btn-confirm:focus,
+.btn-confirm:active,
+.btn-confirm.active,
+.open .dropdown-toggle.btn-confirm {
+  color: #ffffff;
+  background-color:#4dc9b0;
+}
+
+.btn-confirm:active,
+.btn-confirm.active,
+.open .dropdown-toggle.btn-confirm {
+  background-image: none;
+}
+
+.btn-confirm.disabled,
+.btn-confirm[disabled],
+fieldset[disabled] .btn-confirm,
+.btn-confirm.disabled:hover,
+.btn-confirm[disabled]:hover,
+fieldset[disabled] .btn-confirm:hover,
+.btn-confirm.disabled:focus,
+.btn-confirm[disabled]:focus,
+fieldset[disabled] .btn-confirm:focus,
+.btn-confirm.disabled:active,
+.btn-confirm[disabled]:active,
+fieldset[disabled] .btn-confirm:active,
+.btn-confirm.disabled.active,
+.btn-confirm[disabled].active,
+fieldset[disabled] .btn-confirm.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-confirm .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}

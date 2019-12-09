@@ -1,0 +1,186 @@
+.main
+{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 60px 10px 0 0;
+  margin-left:auto;
+  margin-right:auto;
+  width:600px
+}
+.well
+{
+  font-family: 'gandhi_sansregular', "微软雅黑";
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px;
+  width: 720px;
+  background-color: white;
+  border: 0px;
+  border-radius: 0px; 
+  -webkit-box-shadow:0 0 0px rgba(0, 0, 0, 0);  
+  -moz-box-shadow:0 0 0px rgba(0, 0, 0, 0);  
+  box-shadow:0 0 0px rgba(0, 0, 0, 0);  
+}
+.grid3-content{
+	margin-top: 0;
+}
+.grid3
+{
+	padding: 10px 0;
+}
+.well-gray{
+	background:#F5F5F5;
+}
+.name p{
+	padding: 10px 0;
+	font-size: 99%;
+}
+.name small{
+	font-size: 85%;
+}
+.name
+{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.info
+{
+  padding-bottom: 10px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  font-size: 100%;
+}
+.info img{	
+	padding: 10px 0;
+}
+.info p{
+	line-height: 1.2em;
+}
+.info ul{
+	padding-left: 40px;
+	list-style: disc;
+	padding-bottom: 10px;
+}
+.buttons
+{
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.popover {
+	max-width: 800px;
+}
+.btn-confirm {
+  margin-right: 8px;
+  padding: 0px 10px;;
+}
+
+.btn-confirm {
+  color: #ffffff;
+  background-color: #2a323a;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+.btn-confirm:hover,
+.btn-confirm:focus,
+.btn-confirm:active,
+.btn-confirm.active,
+.open .dropdown-toggle.btn-confirm {
+  color: #ffffff;
+  background-color:#4dc9b0;
+}
+
+.btn-confirm:active,
+.btn-confirm.active,
+.open .dropdown-toggle.btn-confirm {
+  background-image: none;
+}
+
+.btn-confirm.disabled,
+.btn-confirm[disabled],
+fieldset[disabled] .btn-confirm,
+.btn-confirm.disabled:hover,
+.btn-confirm[disabled]:hover,
+fieldset[disabled] .btn-confirm:hover,
+.btn-confirm.disabled:focus,
+.btn-confirm[disabled]:focus,
+fieldset[disabled] .btn-confirm:focus,
+.btn-confirm.disabled:active,
+.btn-confirm[disabled]:active,
+fieldset[disabled] .btn-confirm:active,
+.btn-confirm.disabled.active,
+.btn-confirm[disabled].active,
+fieldset[disabled] .btn-confirm.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-confirm .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.portfolio-item .hover-bg {
+	height: 280px;
+}
+.grid1{
+	background:url('../images/gallery/sketch-bg.jpg');
+	height:400px;
+}
+.grid1 h3{
+	padding-top:50px;
+	color: #353c44;
+	font-size:4em;
+}
+.grid1 p{
+	padding-top:30px;
+	font-family: 'gandhi_sansregular', "微软雅黑";
+	color: #353c44;
+}
+.grid1-bottom {
+	background:url('../images/gallery/chinesepainting-bg.jpg');
+	padding-bottom:0px;
+}
+/* ---- item elements ---- */
+.element-item {
+  position: relative;
+  float: left;
+}
+.portfolio-item .hover-bg{
+  height: auto;
+}
+#filters {
+	padding-top:40px;
+}
+
+#filters button{
+	vertical-align:middle ;
+	width:200px;
+	border:none;
+	background:url('../images/gallery/button.png') center no-repeat;
+	background-size: contain;
+	text-shadow: 0px 0px 5px rgba(52, 60, 68, 1);
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;	
+}
+
+#filters button:focus{
+	outline: none;
+}
+
+#filters button:hover{
+	opacity:0.6;filter(alpha=60);
+}
+
+#filters button:active{
+	opacity:1;filter(alpha=100);
+	color: #555555;
+}
+
+

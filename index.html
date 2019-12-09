@@ -1,0 +1,329 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Wuyang Chen</title>
+		<link href="./css/bootstrap.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="./css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="./css/prettyPhoto.css" rel="stylesheet" type="text/css"  media="all" />		
+		<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>	
+	</head>
+	<body>
+		<!---start-wrap--->
+		<!---start-header--->
+	<div class="header">
+		<div class="wrap">
+			<!---start-logo--->
+			<div class="logo">
+				<a href="#">Wuyang Chen</a>
+			</div>
+			<!---End-logo--->
+			<!---start-top-nav--->
+			<div class="top-nav">
+				<ul>
+					<li id="Me" class="active" onclick="func('Me')"><a href="#me" class="scroll">Me</a></li>
+					<li id="Education" onclick="func('Education')"><a href="#education" class="scroll">Education</a></li>
+					<li id="Research" onclick="func('Research')"><a href="#research" class="scroll">Research</a></li>
+					<li id="Publication" onclick="func('Publication')"><a href="#publication" class="scroll">Publication</a></li>
+					<li id="Talks" onclick="func('Talks')"><a href="#talks" class="scroll">Talks</a></li>
+					<li id="Activity" onclick="func('Activity')"><a href="#activity" class="scroll">Activity</a></li>
+					<li id="Experience" onclick="func('Experience')"><a href="#experience" class="scroll">Experience</a></li>
+					<!-- <li id="Art" onclick="func('Art')"><a href="#art" class="scroll">Art Gallery</a></li>					 -->
+					<!-- <li id="Contact" onclick="func('Contact')"><a href="#contact" class="scroll">Contact</a></li> -->
+				</ul>
+			</div>
+			<div class="clear"> </div>
+			<!---End-top-nav--->
+	     </div>
+	</div>
+	
+	<script> 
+	var lastname = 'Me';
+	function func(name){
+		var div = document.getElementById(name); 
+		div.className = 'active'; 
+		div = document.getElementById(lastname); 
+		div.className = ''; 
+		lastname = name;
+	}
+	function coming_soon()
+	{
+		alert("Coming soon.");
+	}
+	</script> 
+	
+		<!---End-wrap--->
+	<div class="content">
+		<div class="grid1" id="me">
+			<div class="welcome-photo">
+				<img src="./images/Wuyang_Chen.png" title="name" />
+				<!-- <a class="welcome-photo1"><img id="me1" src="./images/Wuyang_Chen.png" title="name" /></a> -->
+			</div>
+			<h3>Hi, I'm Wuyang Chen</h3>
+			<p>
+				I'm a Ph.D. student in <a target="_blank" href="https://engineering.tamu.edu/cse/index.html">Computer Science at Texas A&M University</a>
+				<br>
+				under the supervision of <a target="_blank" href="https://www.atlaswang.com/">Professor Atlas Wang</a>.
+				<br>
+				wuyang.chen AT tamu.edu
+			</p>
+			<p style="padding: 10px 0px 0px 0px;">
+				<a target="_blank" href="https://scholar.google.com/citations?user=RHOcEtsAAAAJ&hl=en"><img src="./images/gscholar.png" title="name" style="width:5%"/></a>
+				<a target="_blank" href="https://github.com/chenwydj"><img src="./images/github.png" title="name" style="width:5%"/></a>
+				<!-- <a target="_blank" href="mailto:wuyang.chen@tamu.edu"><img src="./images/email.png" title="name" style="width:5%"/></a> -->
+			</p>
+		</div>
+		<div class="grid3" id="education">
+			<div class="grid3-header">
+				<h3>Education</h3>
+				<br/>
+			</div>
+			<div class="grid3-content">
+				<div class="grid3-content">
+					<ul class="graid3-ul">
+						<li class="graid3-li"> Ph.D. student in Computer Science (08/2019 - present),
+								<a target="_blank" href="https://engineering.tamu.edu/cse/index.html">Texas A&M University (TAMU)</a>
+						</li>
+						<li class="graid3-li">
+							Master’s Degree in Computer Science (01/2016 - 12/2016), 
+								<a target="_blank" href="https://csweb.rice.edu/">Rice University</a>
+						</li>
+						<li class="graid3-li">
+							Bachelor’s Degree in Biosciences (08/2010 - 06/2014)<br/>
+							<a target="_blank" href="https://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>
+						</li>
+					</ul>
+				</div>
+			</div>			
+		</div>
+		<div class="grid2" id="research">
+			<h3>Research</h3>
+			<!-- <p>My interest mainly lies in low-level image processing, including:</p> -->
+			<ul>
+				<li>
+					<img src="./images/segmentation.png" title="Artdirector" />
+					<a>Semantic Segmentation</a>
+				</li>			
+				<li>
+					<img src="./images/nas.png" title="Artdirector" />
+					<a>Neural Architecture Search</a>
+				</li>
+				<li>
+					<img src="./images/efficiency.png" title="Artdirector" />
+					<!-- <a href="project.html#research3">Model Efficiency</a> -->
+					<a>Model Efficiency</a>
+				</li>
+				<li>
+					<img src="./images/domain_transfer.png" title="Artdirector" />
+					<a>Domain Generalization</a>
+				</li>
+				<li>
+					<img src="./images/self-supervised.png" title="Artdirector" />
+					<a>Self-supervided Learning</a>
+				</li>
+			</ul>
+			<p></p>
+			<!-- <p>My research projects are available at my <a class="grid2-herf" href="project.html">project page</a>.</p> -->
+		</div>
+		<div class="grid3" id="publication">
+			<div class="grid3-header">
+				<h3>Publication</h3>
+				<!-- <p>For full publication list, please visit my  -->
+				<!-- <a class="grid2-herf"  href="publication.html">publication page</a> or -->
+				<!-- <a class="grid2-herf"  target="_blank"  href="https://scholar.google.com/citations?user=RHOcEtsAAAAJ&hl=en">google scholar</a> -->
+				<!-- </p> -->
+			</div>
+			<div class="grid3-content">
+				<!-- <div class='row publication-entity'>
+					<div class='col-xs-3'>
+					  <img class="paper-image" src="images/publication/fasterseg.png">
+					</div>
+					<div class='col-xs-9'>
+					  <div class='paper-title'>FasterSeg: Searching for Faster Real-time Semantic Segmentation</div>
+					  <div class='paper-authors'><b>Wuyang Chen</b>, Xinyu Gong, Xianming Liu, Qian Zhang, Yuan Li, Zhangyang Wang</div>
+					  <div class='paper-venue'>ICLR 2020</div>
+					  <div class='paper-link'>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1905.06368.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://github.com/chenwydj/FasterSeg">Code</a>
+					  </div>
+					</div>
+				</div>-->
+				<div class='row publication-entity'>
+					<div class='col-xs-3'>
+					  <img class="paper-image" src="images/publication/glnet.png">
+					</div>
+					<div class='col-xs-9'>
+					  <div class='paper-title'>Collaborative Global-Local Networks for Memory-Efficient Segmentation of Ultra-High Resolution Images</div>
+					  <div class='paper-authors'><b>Wuyang Chen*</b>, Ziyu Jiang*, Zhangyang Wang, Kexin Cui, Xiaoning Qian</div>
+					  <div class='paper-venue'>CVPR 2019 (oral)</div>
+					  <div class='paper-link'>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1905.06368.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://github.com/chenwydj/ultra_high_resolution_segmentation">Code</a>
+						<a class="btn btn-confirm" target="_blank" href="https://www.youtube.com/watch?v=am1GiItQI88">Video</a>
+					  </div>
+					</div>
+				</div>				
+				<div class='row publication-entity'>
+					<div class='col-xs-3'>
+					  <img class="paper-image" src="images/publication/adin.png">
+					</div>
+					<div class='col-xs-9'>
+					  <div class='paper-title'>Calibrated Domain-Invariant Learning for Highly Generalizable Large Scale Re-Identification</div>
+					  <div class='paper-authors'>Ye Yuan, <b>Wuyang Chen</b>, Tianlong Chen, Yang Yang, Zhou Ren, Zhangyang Wang, Gang Hua</div>
+					  <div class='paper-venue'>WACV 2020</div>
+					  <div class='paper-link'>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1911.11314.pdf">PDF</a>
+					  </div>
+					</div>
+				</div>	
+				<div class='row publication-entity'>
+					<div class='col-xs-3'>
+					  <img class="paper-image" src="images/publication/abdnet.png">
+					</div>
+					<div class='col-xs-9'>
+					  <div class='paper-title'>ABD-Net: Attentive but Diverse Person Re-Identification</div>
+					  <div class='paper-authors'>Tianlong Chen, Shaojin Ding, Jingyi Xie, Ye Yuan, <b>Wuyang Chen</b>, Yang Yang, Zhou Ren, Zhangyang Wang</div>
+					  <div class='paper-venue'>ICCV 2019</div>
+					  <div class='paper-link'>
+							<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1908.01114.pdf">PDF</a>
+							<a class="btn btn-confirm" target="_blank" href="https://github.com/TAMU-VITA/ABD-Net">Code</a>
+					  </div>
+					</div>
+				</div>	
+			</div>			
+		</div>
+
+		<div class="grid3" id="talks" style="background:#ffffff">	
+			<div class="grid3-header" id="talks">
+				<h3>Talks</h3>
+				<br/>
+			</div>		
+			<div class="grid3-content">
+				<ul class="graid3-ul">
+					<li class="graid3-li">
+						CVPR’19 oral presentation "Collaborative Global-Local Networks for Memory-Eﬃcient Segmentation of Ultra-high Resolution Images.", 2019.
+					</li>
+					<li class="graid3-li">
+						CVPR’19 workshop on Gigapixel Videography in Computer Vision, 2019.
+					</li>
+					<li class="graid3-li">
+						Best Student Speaker and Outstanding Researcher, <a target="_blank" href="https://csst.ucla.edu">CSST program, UCLA</a>, 2013.
+					</li>	
+				</ul>
+			</div>
+		</div>		
+
+		<div class="grid3" id="activity" style="background:#eee">	
+			<div class="grid3-header" id="activity">
+				<h3>Activity</h3>
+				<br/>
+			</div>		
+			<div class="grid3-content">
+				<h3>Professional Services:</h3>
+				<ul class="graid3-ul">
+					<li class="graid3-li"> Workshop Organizer: <a target="_blank" href="http://www.ug2challenge.org">UG<sup>2</sup>+, CVPR 2020</a>
+					</li>				
+					<li class="graid3-li"> Reviewer: CVPR, ICCV, WACV
+					</li>
+				</ul>
+				<h3>Awards and Honors:</h3>
+				<ul class="graid3-ul">
+					<li class="graid3-li"> Travel Award, Mathematical/Statistical approaches in DAta Science (MSDAS) Workshop, UT Dallas, 2019.
+					</li>
+					<li class="graid3-li"> Best Student Speaker and Outstanding Researcher, <a target="_blank" href="https://csst.ucla.edu">CSST program, UCLA</a>, 2013.
+					</li>
+					<li class="graid3-li"> UCLA CSST Scholarship, 2013
+					</li>	
+					<li class="graid3-li"> Gold Medal (Team Leader of 20 members) iGEM, MIT, 2012
+					</li>
+				</ul>
+				<br/>
+			</div>
+		</div>		
+
+		<div class="grid3" id="experience" style="background:#ffffff">	
+			<div class="grid3-header" id="experience">
+				<h3>Professional Experience</h3>
+				<br/>
+			</div>		
+			<div class="grid3-content">
+				<ul class="graid3-ul">
+					<li class="graid3-li">
+						Research Assistant, Visual Informatics Group, Texas A&M University, May 2018 - Present
+						<br>
+						Advisor: <a target="_blank" href="https://www.atlaswang.com/home">Prof. Zhangyang (Atlas) Wang</a>
+					</li>
+					<li class="graid3-li">
+						Research Intern, NVIDIA, Jan. 2020 - Aug. 2020
+						<br>
+						Advisor: <a target="_blank" href="https://chrisding.github.io">Dr. Zhiding Yu</a>, <a target="_blank" href="http://tensorlab.cms.caltech.edu/users/anima/">Prof. Anima Anandkumar</a>
+					</li>
+					<li class="graid3-li">
+						Research Intern, Applied AI Lab, Horizon Robotics, Mar. 2019 - Aug. 2019
+						<br>
+						Advisor: <a target="_blank" href="https://scholar.google.com/citations?user=697UEEIAAAAJ&hl=en">Dr. Xianming Liu</a>, <a target="_blank" href="https://www.linkedin.com/in/yuan-li-328bb91a">Yuan Li</a>
+					</li>
+					<li class="graid3-li">
+						Research Assistant, University of Science and Technology of China, Sep. 2013 - Jun. 2014
+						<br>
+						Advisor: <a target="_blank" href="http://biocomp.ustc.edu.cn/people/pi.php">Prof. Haiyan Liu</a>
+					</li>
+					<li class="graid3-li">
+						Research Intern, <a target="_blank" href="https://csst.ucla.edu">CSST program, UCLA</a>, Jun. 2013 - Sep. 2013
+						<br>
+						Advisor: <a target="_blank" href="https://yeateslab.mbi.ucla.edu">Prof. Todd O. Yeates</a>
+					</li>
+				</ul>
+			</div>
+		</div>		
+		<!-- <div class="grid2" id="contact">
+			<h3>Contact</h3>	
+			<div class="grid2-content">
+				<p>Email: williamyang AT pku.edu.com</p>			
+			</div>			
+		</div> -->
+		<div class="footer">
+			<p>2019 Wuyang Chen. Powered by <a href="https://williamyang1991.github.io/">Shuai Yang</a></p>
+		</div>
+	</div>
+	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.banner.js"></script>
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>		
+		<script type="text/javascript" src="js/jquery.isotope.js"></script>	
+		<script type="text/javascript" src="js/main.js"></script>	
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},800);
+			});
+		});	
+		var curid = 0;
+		var imgid = 0;
+		function change()
+		{
+			imgid++;
+			imgid%=4;
+			if(curid == 1){
+
+				$("#me1").attr("src","images/g" + imgid + ".png");
+				$('#me2').fadeOut(1000);
+			}else {
+				$("#me2").attr("src","images/g" + imgid + ".png");
+				$('#me2').fadeIn(1000);
+			}
+			curid++;
+			curid%=2;
+		}
+		setInterval(change,10000);
+		</script>			
+	</body>
+</html>
