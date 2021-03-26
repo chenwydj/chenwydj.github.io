@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://www.icst.pku.edu.cn/course/icb/MRS_MCI.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="language" content="english">
+<title>Training-free TE-NAS</title>
+<meta name="description" content="Training-free TE-NAS">
+<meta name="author" content="Wuyang Chen">
+<!-- <link rel="icon" type="image/x-icon" href="http://www.icst.pku.edu.cn/favicon.ico"> -->
+<link rel="stylesheet" type="text/css" href="TENAS/css/project.css">
+<!-- <link rel="stylesheet" type="text/css" href="../../css/project.css"> -->
+<!-- <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css"  media="all" /> -->
+<!-- <link href="../../css/style.css" rel="stylesheet" type="text/css"  media="all" /> -->
+<!-- <link href="../../css/prettyPhoto.css" rel="stylesheet" type="text/css"  media="all" />		 -->
+<!-- <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>	 -->
+</head>
+	<script> 
+	function coming_soon()
+	{
+		alert("We are cleaning up our code to make it more simple and readable");
+	}
+	</script> 
+
+<body>
+<div id="main">
+  
+	<div class="content"><br>
+		<div class="title">
+			<p class="banner"align="center">Accepted by ICLR 2021</p>
+			<h1>Neural Architecture Search on ImageNet in Four<br/>GPU Hours: A Theoretically Inspired Perspective</h1>
+		</div>
+		<div class="authors" style="width:95%">
+			<div class='author'>
+				 <A href="https://chenwydj.github.io/" style="text-decoration: none">Wuyang Chen</A>
+		    </div>
+			<div class='author'>
+				 <A href="https://gongxinyuu.github.io/" style="text-decoration: none">Xinyu Gong</A>
+			</div>
+			<div class='author'>
+				 <A href="https://vita-group.github.io/" style="text-decoration: none">Zhangyang Wang</A>
+			</div>
+		</div>
+		<br>
+		
+		<div class="overview sec">
+			<div class="image" style="padding: 2em 0 0.5em 0">
+				<table border="0" width='100%' style="FONT-SIZE:15" >
+				 <tr align="center">
+					<td><img src="TENAS/figures/tenas_cost_acc_imagenet.png" alt="" width="50%" ></td>
+				</tr>					 
+				 </table>
+				
+				<!-- <table border="0" width='100%' style="FONT-SIZE:15" >
+				 <tr align="center">
+					<td width="13.55%" align="left"><img src="SMGAN/figures/teaser-a.jpg" alt="" width="99%" ></td>
+					<td width="33.67%"><img src="SMGAN/figures/teaser-b.png" alt="" width="99%" ></td>
+					<td width="34.48%"><img src="SMGAN/figures/teaser-c.gif" alt="" width="99%" ></td>	
+					<td width="18.30%" align="right"><img src="SMGAN/figures/teaser-d.gif" alt="" width="99%" ></td>
+				 </tr>
+				 <tr align="center">
+					<td>(a) source image</td><td>(b) adjustable stylistic degree of glyph</td><td>(c) stylized text</td><td>(d) application</td>
+				</tr>					 
+				 </table>
+				 <table border="0" width='100%' style="FONT-SIZE:15" >
+				 <tr align="center">
+					<td align="left" width="50%"><img src="SMGAN/figures/teaser-e.gif" alt="" width="99%" ></td>	
+					<td align="right" width="50%"><img src="SMGAN/figures/teaser-f.gif" alt="" width="99%" ></td>						
+				 </tr>					 
+				 <tr align="center">
+					<td>(e) liquid artistic text rendering</td><td>(f) smoke artistic text rendering</td>
+				</tr>	
+				</table> -->
+		  		<p style="text-align: justify">
+				  Figure 1. State-of-the-art NAS methods on ImageNet with DARTS search space. Our TE-NAS significantly reduces search time cost, while still achieve comparable or
+				  even better accuracy than previous NAS methods.
+				</p>
+	  		</div>
+	  	</div>
+		
+		<div class="abstract_sec">
+			<h2>Abstract</h2>
+			<div class='desp'>
+				<p style="text-align:justify">
+					Neural Architecture Search (NAS) has been explosively studied to automate the discovery of top-performer neural networks. Current works require heavy training of supernet
+					or intensive architecture evaluations, thus suffering from heavy resource consumption and often incurring search bias due to truncated training or approximations.
+					Can we select the best neural architectures without involving any training and eliminate a drastic portion of the search cost? We provide an affirmative answer, by
+					proposing a novel framework called <i>training-free neural architecture search</i> <b>(TE-NAS)</b>. TE-NAS ranks architectures by analyzing the spectrum of the neural tangent kernel (NTK)
+					and the number of linear regions in the input space. Both are motivated by recent theory advances in deep networks and can be computed without any training and any label.
+					We show that: (1) these two measurements imply the <i>trainability</i> and <i>expressivity</i> of a neural network; (2) they strongly correlate with the network's test accuracy. Further on,
+					we design a pruning-based NAS mechanism to achieve a more flexible and superior trade-off between the trainability and expressivity during the search. In NAS-Bench-201 and
+					DARTS search spaces, TE-NAS completes high-quality search but only costs <b>0.5</b> and <b>4</b> GPU hours with one 1080Ti on CIFAR-10 and ImageNet, respectively. We hope our work inspires
+					more attempts in bridging the theoretical findings of deep networks and practical impacts in real NAS applications.
+				</p>
+			</div>
+		</div>
+
+		<!-- <div class='row publication-entity'>
+		<div class='col-xs-9'>
+		<div class='paper-link'>
+			<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2102.11535.pdf">PDF</a>
+			<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/TENAS">Code</a>
+		</div>
+		</div>
+		</div> -->
+
+		<div class="abstract_sec">
+			<h2>Theoretically Inspired Training-free Indicators of Network's Accuracy</h2>
+			<div class="images">
+				<table border="0" width='100%' style="FONT-SIZE:15" >
+					<tr align="center">
+						<td align="left" width="28%"><img src="TENAS/figures/ntk_cond.png" alt="" width="99%" ></td>	
+						<td align="left" width="15%"><img src="TENAS/figures/lr_example.png" alt="" width="99%" ></td>	
+						<td align="left" width="28%"><img src="TENAS/figures/lr.png" alt="" width="99%" ></td>	
+						<td align="left" width="28%"><img src="TENAS/figures/op_preferences.png" alt="" width="99%" ></td>	
+					</tr>					 
+					<tr align="center">
+						<td>(A)</td><td>(B)</td><td>(C)</td><td>(D)</td>
+					</tr>
+				</table>
+				  <p style="text-align: left">Figure 2. <b>(A)</b> The <b>condition number of NTK</b> [1] indicates network's <b>trainability</b>, which strongly correlates with networks' accuracies.
+					<b>(B)</b> a ReLU network can split its input space into linear regions. <b>(C)</b> <b>>Number of linear regions</b> [2] indicates network's <b>expressivity</b>,
+					which also strongly correlates with networks' accuracies. <b>(D)</b> In NAS-Bench-201 search space [3], the condition number of NTK prefers more skip-connections,
+					while the number of linear regions favors more convolutional layers.
+				</p>
+	  		</div>
+	  	</div>	
+
+		<div class="abstract_sec">
+			<h2>TE-NAS: a Pruning-based Training-free & Label-free NAS algorithm</h2>
+			<div class="images">
+				<table border="0" width='100%' style="FONT-SIZE:15" >
+					<tr align="center">
+						<td align="left" width="65%"><img src="TENAS/figures/algo.png" alt="" width="99%" ></td>	
+						<td align="left" width="35%"><img src="TENAS/figures/pruning.png" alt="" width="99%" ></td>	
+					</tr>					 
+					<tr align="center">
+						<td>(A)</td><td>(B)</td>
+					</tr>
+				</table>
+				  <p style="text-align: left">Figure 3. <b>(A)</b> Starting from a supernet, we progressivly prune operators that have the least importance to the supernet's trainability
+					and expressivity, until we reach a single-path network. <b>(B)</b> Visualization of search process: supernet is first pruned with bad operators that jeopardize its
+					trainability, then try to preserve its expressivity.
+				</p>
+	  		</div>
+	  	</div>	
+		
+		<div class="download_sec">
+			<h2>Resources</h2>
+			<div>
+				<li><strong>Paper</strong>: <a href="https://arxiv.org/pdf/2102.11535.pdf">Paper</a></li>
+				<li><strong>Released Code</strong>: <a href="https://github.com/VITA-Group/TENAS">PyTorch implementation</a></li>
+			</div>
+		</div>
+
+		<div class='citation_sec'>
+			<h2>Citation</h2>
+			<p class='bibtex'>@inproceedings{chen2020tenas,
+    title={Neural Architecture Search on ImageNet in Four GPU Hours: A Theoretically Inspired Perspective},
+    author={Chen, Wuyang and Gong, Xinyu and Wang, Zhangyang},
+    booktitle={International Conference on Learning Representations},
+    year={2021}
+}</p>
+		</div>
+
+		<!-- <div class="experiments_sec">
+			<h2>Selected Results</h2>
+			<div id="images">
+				<img src="SMGAN/figures/compare.png" alt="" width="100%" >		
+				<P style="text-align: justify">Figure 3. Comparison with state-of-the-art methods on various styles. (a) Input style with its structure map in the lower-left corner. (b) Target text. (c) Image Analogy [1]. (d) Neural Style Transfer [2] with spatial control [3]. (e) Neural Doodle [4]. (f) T-Effect [5]. (g) UT-Effect [6]. (h) Our style transfer results. We manually select the suitable deformation degrees for UT-Effect [6] and out method.</P>	
+			</div>	
+			<div id="images">
+				<img src="SMGAN/figures/compare2.png" alt="" width="100%" >		
+				<P style="text-align: justify">Figure 4. Qualitative comparison between the proposed method and other scale-controllable style transfer methods. For the first column, from top to bottom: the target text and style image. Remaining columns: Results by (a) UT-Effect [6] with resolution level evenly increasing from 1 to 7; (b) the proposed method with <em>l</em> evenly increasing from 0 to 1. All results are produced by one single model for each method. The red box region is shown enlarged in the bottom with the corresponding structure map provided for better visual comparison.</P>	
+			</div>			
+			
+		</div> -->
+		
+		<div class="reference_sec">
+		<h2>Reference</h2>
+		  <div class="bib">
+		    <p>[1] Xiao, Lechao, Jeffrey Pennington, and Samuel Schoenholz. "Disentangling Trainability and Generalization in Deep Neural Networks." ICML 2020.</p>
+		    <p>[2] Hanin, Boris, and David Rolnick. "Complexity of linear regions in deep networks." ICML 2019.</p>
+		  	<p>[3] Dong, Xuanyi, and Yi Yang. "Nas-bench-201: Extending the scope of reproducible neural architecture search." ICLR 2020.</p>
+		  </div>
+	</div>
+		
+		
+		<br></br> 
+
+
+	<p class="banner"align="center">Last update: March 2021</p>
+  </div>
+</div>
+</body>
+</html>
