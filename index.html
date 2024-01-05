@@ -28,7 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="top-nav">
 				<ul>
 					<li id="Me" class="active" onclick="func('Me')"><a href="#me" class="scroll">Me</a></li>
-					<li id="Education" onclick="func('Education')"><a href="#education" class="scroll">Education</a></li>
+					<!-- <li id="Education" onclick="func('Education')"><a href="#education" class="scroll">Education</a></li> -->
 					<li id="Research" onclick="func('Research')"><a href="#research" class="scroll">Research</a></li>
 					<li id="Publication" onclick="func('Publication')"><a href="#publication" class="scroll">Publication</a></li>
 					<li id="Talks" onclick="func('Talks')"><a href="#talks" class="scroll">Talks</a></li>
@@ -59,12 +59,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 		<!---End-wrap--->
 	<div class="content">
-		<div class="grid1" id="me">
+		<!-- <div class="grid1" id="me"> -->
+		<div class="grid1" id="me" style="background:#ffffff">
 			<div class="welcome-photo">
 				<img src="./images/Wuyang_Chen.jpg" title="name" />
 				<!-- <a class="welcome-photo1"><img id="me1" src="./images/Wuyang_Chen.png" title="name" /></a> -->
 			</div>
-			<h3>Hi, I'm Wuyang Chen</h3>
+			<!-- <h3>Hi, I'm Wuyang Chen</h3>
 			<p>
 				I earned my Ph.D. degree in <a target="_blank" href="http://www.ece.utexas.edu/research/areas/commnets">ECE Department, UT Austin</a>
 				<br>
@@ -75,12 +76,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				Before that, I am now a Postdoc at UC Berkeley, working with <a target="_blank" href="https://www.stat.berkeley.edu/~mmahoney/index.html">Professor Michael Mahoney</a>.
 				<br>
 				Board Member: <a target="_blank" href="https://www.oneworldml.org/">One World Seminar Series on the Mathematics of Machine Learning</a>
-				<br>
-				wuyang.chen AT utexas.edu
-				<br>
-				wuyang.chen AT berkeley.edu
+				<!-- <br> -->
+				<!-- wuyang.chen AT utexas.edu -->
+				<!-- <br> -->
+				<!-- wuyang.chen AT berkeley.edu -->
+				<!-- <br> -->
+				<!-- wuyang AT sfu.ca -->
 				<!-- <br> -->
 				<!-- <b style="background-color:yellow; color: black">I am on the market for academia positions.</b> -->
+			<!-- </p> -->
+			<h3>Biography</h3>
+			<p style="text-align:left">
+			Dr. Wuyang Chen is an incoming tenure-track Assistant Professor in the <a target="_blank" href="https://www.sfu.ca/computing.html">School of Computing Science</a> at <a target="_blank" href="https://www.sfu.ca/">Simon Fraser University</a> (Fall 2024).
+			Currently, Dr. Chen is a postdoc researcher in Statistics at the University of California, Berkeley, working with <a target="_blank" href="https://www.stat.berkeley.edu/~mmahoney/index.html">Professor Michael Mahoney</a>.
+			He obtained his Ph.D. from the <a target="_blank" href="https://www.ece.utexas.edu/">ECE Department at UT Austin</a> in 2023, under the supervision of <a target="_blank" href="https://vita-group.github.io/">Professor Atlas Wang</a>.
+			Dr. Chen's research focuses on the theoretical understanding of deep learning, with applications in foundation models, AutoML, computer vision, natural language processing, and addressing scientific problems.
+			His work also encompasses domain adaptation/generalization and self-supervised learning.
+			He published papers on CVPR, ECCV, ICLR, ICML, Neurips, etc.
+			Dr. Chen's work on training-free neural architecture design was highlighted as the "Featured Advances in Artificial Intelligence" in the <a target="_blank" href="https://www.nsf.gov/news/news_summ.jsp?cntn_id=304639&org=CISE">National Science Foundation (NSF) newsletter</a> in 2022.
+			Dr. Chen co-organized the 4th and 5th versions of <a target="_blank" href="http://www.ug2challenge.org">UG2+ workshop and challenge</a> in CVPR 2021 and 2022.
+			He also holds a position on the board of the <a target="_blank" href="https://www.oneworldml.org/">One World Seminar Series on the Mathematics of Machine Learning</a>.
+			<p style="text-align:center">
+				<!-- <br> -->
+				<!-- wuyang.chen AT utexas.edu -->
+				<br>
+				wuyang.chen AT berkeley.edu
+				<br>
+				wuyang AT sfu.ca
+				<!-- <br> -->
+				<!-- <b style="background-color:yellow; color: black">I am on the market for academia positions.</b> -->
+			</p>
 			</p>
 			<p style="padding: 10px 0px 0px 0px;">
 				<a target="_blank" href="https://scholar.google.com/citations?user=RHOcEtsAAAAJ&hl=en"><img src="./images/gscholar.png" title="name" style="width:5%"/></a>
@@ -88,7 +113,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- <a target="_blank" href="mailto:wuyang.chen@tamu.edu"><img src="./images/email.png" title="name" style="width:5%"/></a> -->
 			</p>
 		</div>
-		<div class="grid3" id="education">
+
+		<!-- <div class="grid3" id="education">
 			<div class="grid3-header">
 				<h3>Education</h3>
 				<br/>
@@ -113,12 +139,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="grid3" id="research" style="background:#ffffff">
 			<!-- <h3>Research</h3> -->
 			<div class="grid3-header">
-				<h3>Research: Theory-accelerated AI and Its Implication in AI4Science</h3>
+				<h3>Research:<br>Theory-accelerated AI, with Implications for Scientific Problems</h3>
 				<br/>
 			</div>
 			<!-- <p>My interest mainly lies in low-level image processing, including:</p> -->
@@ -127,16 +153,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<ul class="graid3-ul">
 						<li class="graid3-li">
 					  		<div class='paper-title'>[Core Method] Theory-accelerated AI</div>
-					  		<div class='paper-authors'>We are dedicated to examining key aspects of Deep Networks, including trainability, expressivity, and generalization, with a focus on data complexity, model architecture, and training dynamics. This systematic analysis aims to expedite the AI development pipeline by optimizing data compression, performance forecasting, network architecture, and model scaling in a zero-shot fashion.</div>
+					  		<div class='paper-authors'>
+								  We are dedicated to examining key aspects of Deep Learning, including data, model architectures (trainability/expressivity/generalization), and training dynamics.
+								  This systematic analysis aims to expedite the AI development pipeline by optimizing data quality, model design/scaling, and training recipe in a zero-shot manner.
+							</div>
 						</li>
 						<li class="graid3-li">
-					  		<div class='paper-title'>[Core Application] AI4Science</div>
-					  		<div class='paper-authors'>Our methodologies, guided by theoretical principles, aim to expedite scientific discovery, with a specific focus on deciphering the structures and regulatory mechanisms in the human genome.</div>
+					  		<div class='paper-title'>[Core Application] AI-for-Science</div>
+					  		<div class='paper-authors'>
+								  Our methodologies, guided by theoretical principles, aim to expedite scientific discovery,
+								  <!-- with a specific focus on deciphering the structures and regulatory mechanisms in the human genome.</div> -->
+								  with a specific focus on the human genome and scientific machine learning.</div>
 						</li>
 					</ul>
 					<ul class="graid3-ul">
 					<div class='paper-authors'>
-						Beyond above core aims, we are also interested in broad topics in model efficiency, automated machine learning (AutoML), self-supervised learning, domain generalization, and computer vision.
+						In addition to the core aims mentioned above, we are also interested in a broad range of topics,
+						including computer vision, natural language processing, model efficiency, automated machine learning (AutoML), self-supervised learning, and domain generalization.
 					</div>
 					</ul>
 				</div>
@@ -187,113 +220,146 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="grid3-content">
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					  <div class='paper-title'>Understanding and Accelerating Neural Architecture Search with Training-Free and Theory-Grounded Metrics</div>
+					  <div class='paper-authors'><b>Wuyang Chen</b>, Xinyu Gong, Junru Wu, Yunchao Wei, Humphrey Shi, Zhicheng Yan, Yi Yang, Zhangyang Wang</div>
+					  <div class='paper-venue'>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</div>
+					  <div class='paper-link'>
+						<a class="btn btn-confirm" target="_blank" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10337787">Paper</a>
+						<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/TEGNAS">Code</a>
+					  </div>
+				</div>
+				<div class='row publication-entity'>
+					  <div class='paper-title'>"No Free Lunch" in Neural Architectures? A Joint Analysis of Expressivity, Convergence, and Generalization</div>
+					  <div class='paper-authors'><b>Wuyang Chen</b>, Wei Huang, Zhangyang Wang</div>
+					  <div class='paper-venue'>AutoML Conference 2023</div>
+					  <div class='paper-link'>
+						<a class="btn btn-confirm" target="_blank" href="https://openreview.net/forum?id=EMys3eIDJ2">Paper</a>
+					  </div>
+				</div>
+				<div class='row publication-entity'>
+					  <div class='paper-title'>Data-Model-Circuit Tri-Design for Ultra-Light Video Intelligence on Edge Devices</div>
+					  <div class='paper-authors'>Yimeng Zhang, Akshay Karkal Kamath, Qiucheng Wu, Zhiwen Fan, <b>Wuyang Chen</b>, Zhangyang Wang, Shiyu Chang, Sijia Liu, Cong Hao</div>
+					  <div class='paper-venue'>Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC 2023)</div>
+					  <div class='paper-link'>
+						<a class="btn btn-confirm" target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3566097.3567864">Paper</a>
+					  </div>
+				</div>
+				<div class='row publication-entity'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/moe_icml23.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-12'> -->
 					  <div class='paper-title'>Lifelong Language Pretraining with Distribution-Specialized Experts</div>
 					  <div class='paper-authors'><b>Wuyang Chen*</b>, Yanqi Zhou, Nan Du, Yanping Huang, James Laudon, Zhifeng Chen, Claire Cui</div>
 					  <div class='paper-venue'>ICML 2023</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2305.12281.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2305.12281.pdf">Paper</a>
 						<!-- <a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/architecture_convergence">Code</a> -->
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/dag_convergence_neurips22.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Deep Architecture Connectivity Matters for Its Convergence: A Fine-Grained Analysis</div>
 					  <div class='paper-authors'><b>Wuyang Chen*</b>, Wei Huang*, Xinyu Gong, Boris Hanin, Zhangyang Wang</div>
 					  <div class='paper-venue'>Neurips 2022</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2205.05662.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2205.05662.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/architecture_convergence">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/uvit_eccv22.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>A Simple Single-Scale Vision Transformer for Object Localization and Instance Segmentation</div>
 					  <div class='paper-authors'><b>Wuyang Chen</b>, Xianzhi Du, Fan Yang, Lucas Beyer, Xiaohua Zhai, Tsung-Yi Lin, Huizhong Chen, Jing Li, Xiaodan Song, Zhangyang Wang, Denny Zhou</div>
 					  <div class='paper-venue'>ECCV 2022</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2112.09747.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2112.09747.pdf">Paper</a>
 						<!-- <a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/AsViT">Code</a> -->
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/asvit_iclr22.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Auto-Scaling Vision Transformers without Training</div>
 					  <div class='paper-authors'><b>Wuyang Chen</b>, Wei Huang, Xianzhi Du, Xiaodan Song, Zhangyang Wang, Denny Zhou</div>
 					  <div class='paper-venue'>ICLR 2022</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://openreview.net/forum?id=H94a1_Pyr-6">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://openreview.net/forum?id=H94a1_Pyr-6">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/AsViT">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/sfw_pruning_iclr22.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Learning Pruning-Friendly Networks via Frank-Wolfe: One-Shot, Any-Sparsity, And No Retraining</div>
 					  <div class='paper-authors'>Miao Lu, Xiaolong Luo, Tianlong Chen, <b>Wuyang Chen</b>, Dong Liu, Zhangyang Wang</div>
 					  <div class='paper-venue'>ICLR 2022</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://openreview.net/forum?id=O1DEtITim__">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://openreview.net/forum?id=O1DEtITim__">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/SFW-Once-for-All-Pruning">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/sabn_21.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Sandwich Batch Normalization: A Drop-In Replacement for Feature Distribution Heterogeneity</div>
 					  <div class='paper-authors'>Xinyu Gong, <b>Wuyang Chen</b>, Tianlong Chen, Zhangyang Wang</div>
 					  <div class='paper-venue'>WACV 2022</div>
 					  <div class='paper-link'>
-							<a class="btn btn-confirm" target="_blank" href="https://openaccess.thecvf.com/content/WACV2022/papers/Gong_Sandwich_Batch_Normalization_A_Drop-In_Replacement_for_Feature_Distribution_Heterogeneity_WACV_2022_paper.pdf">PDF</a>
+							<a class="btn btn-confirm" target="_blank" href="https://openaccess.thecvf.com/content/WACV2022/papers/Gong_Sandwich_Batch_Normalization_A_Drop-In_Replacement_for_Feature_Distribution_Heterogeneity_WACV_2022_paper.pdf">Paper</a>
 							<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/Sandwich-Batch-Normalization">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>	
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					  <div class='paper-title'>DANCE: DAta-Network Co-optimization for Efficient Segmentation Model Training and Inference</div>
+					  <div class='paper-authors'>Chaojian Li, <b>Wuyang Chen</b>, Yuchen Gu, Tianlong Chen, Yonggan Fu, Zhangyang Wang, Yingyan Lin</div>
+					  <div class='paper-venue'>ACM Transactions on Design Automation of Embedded Systems (TODAES)</div>
+					  <div class='paper-link'>
+						<a class="btn btn-confirm" target="_blank" href="https://dl.acm.org/doi/10.1145/3510835">Paper</a>
+					  </div>
+				</div>
+				<div class='row publication-entity'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/l2o_prime_21.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Learning to Optimize: A Primer and A Benchmark</div>
 					  <div class='paper-authors'>Tianlong Chen, Xiaohan Chen, <b>Wuyang Chen</b>, Howard Heaton, Jialin Liu, Zhangyang Wang, Wotao Yin</div>
 					  <div class='paper-venue'>JMLR</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2103.12828.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2103.12828.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/Open-L2O">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/tenas_iclr21.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Neural Architecture Search on ImageNet in Four GPU Hours: A Theoretically Inspired Perspective</div>
 					  <div class='paper-authors'><b>Wuyang Chen</b>, Xinyu Gong, Zhangyang Wang</div>
 					  <div class='paper-venue'>ICLR 2021</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2102.11535.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2102.11535.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/TENAS">Code</a>
 						<a class="btn btn-confirm" target="_blank" href="projects/ICLR2021/TENAS.html">Project</a>
 						<a class="btn btn-confirm" target="_blank" href="https://www.youtube.com/watch?v=o8V1LeZaPwU">Video</a>
@@ -303,151 +369,151 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- <a class="btn btn-confirm" target="_blank" href="https://www.ifml.institute/research/neural-architecture-search-imagenet-four-gpu-hours-theoretically-inspired-perspective">Media Coverage 1</a> -->
 						<!-- <a class="btn btn-confirm" target="_blank" href="https://syncedreview.com/2021/01/18/iclr-2021-ut-austin-training-free-framework-performs-high-quality-nas-on-imagenet-in-four-gpu-hours/">Media Coverage 2</a> -->
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/csg_iclr21.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Contrastive Syn-to-Real Generalization</div>
 					  <div class='paper-authors'><b>Wuyang Chen</b>, Zhiding Yu, Shalini De Mello, Sifei Liu, Jose M. Alvarez, Zhangyang Wang, Anima Anandkumar</div>
 					  <div class='paper-venue'>ICLR 2021</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://openreview.net/pdf?id=F8whUO8HNbP">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://openreview.net/pdf?id=F8whUO8HNbP">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://research.nvidia.com/publication/2021-05_contrastive-syn-real-generalization">Project</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/NVlabs/CSG">Code</a>
 						<!-- <a class="btn btn-confirm" >Code</a> -->
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/asg_icml20.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Automated Synthetic-to-Real Generalization</div>
 					  <div class='paper-authors'><b>Wuyang Chen</b>, Zhiding Yu, Zhangyang Wang, Animashree Anandkumar</div>
 					  <div class='paper-venue'>ICML 2020</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2007.06965.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2007.06965.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://research.nvidia.com/publication/2020-07_automated-synthetic-real-generalization">Project</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/NVlabs/ASG">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/pu_icml20.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Self-PU: Self Boosted and Calibrated Positive-Unlabeled Training</div>
 					  <div class='paper-authors'><b>Wuyang Chen</b>*, Xuxi Chen*, Tianlong Chen, Ye Yuan, Chen Gong, Kewei Chen, Zhangyang Wang</div>
 					  <div class='paper-venue'>ICML 2020</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2006.11280.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2006.11280.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/TAMU-VITA/Self-PU">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/agd_icml20.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Auto-GAN-Distiller: Searching to Compress Generative Adversarial Networks</div>
 					  <div class='paper-authors'>Yonggan Fu, <b>Wuyang Chen</b>, Haotao Wang, Haoran Li, Yingyan Lin, Zhangyang Wang</div>
 					  <div class='paper-venue'>ICML 2020</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2006.08198.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2006.08198.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/TAMU-VITA/AGD">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/fasterseg_iclr20.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>FasterSeg: Searching for Faster Real-time Semantic Segmentation</div>
 					  <div class='paper-authors'><b>Wuyang Chen</b>, Xinyu Gong, Xianming Liu, Qian Zhang, Yuan Li, Zhangyang Wang</div>
 					  <div class='paper-venue'>ICLR 2020</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1912.10917.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1912.10917.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/chenwydj/FasterSeg">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/autopose_20.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>AutoPose: Searching Multi-Scale Branch Aggregation for Pose Estimation</div>
 					  <div class='paper-authors'>Xinyu Gong, <b>Wuyang Chen</b>, Yifan Jiang, Ye Yuan, Xianming Liu, Qian Zhang, Yuan Li, Zhangyang Wang</div>
 					  <!-- <div class='paper-venue'>ICCV 2019</div> -->
 					  <div class='paper-link'>
-							<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2008.07018.pdf">PDF</a>
+							<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/2008.07018.pdf">Paper</a>
 							<a class="btn btn-confirm" target="_blank" href="https://github.com/VITA-Group/AutoPose">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>	
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/glnet_cvpr19.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Collaborative Global-Local Networks for Memory-Efficient Segmentation of Ultra-High Resolution Images</div>
 					  <div class='paper-authors'><b>Wuyang Chen*</b>, Ziyu Jiang*, Zhangyang Wang, Kexin Cui, Xiaoning Qian</div>
 					  <div class='paper-venue'>CVPR 2019 (oral)</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1905.06368.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1905.06368.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/chenwydj/ultra_high_resolution_segmentation">Code</a>
 						<a class="btn btn-confirm" target="_blank" href="https://www.youtube.com/watch?v=am1GiItQI88">Video</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>				
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/adin_wacv20.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>Calibrated Domain-Invariant Learning for Highly Generalizable Large Scale Re-Identification</div>
 					  <div class='paper-authors'>Ye Yuan, <b>Wuyang Chen</b>, Tianlong Chen, Yang Yang, Zhou Ren, Zhangyang Wang, Gang Hua</div>
 					  <div class='paper-venue'>WACV 2020</div>
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1911.11314.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1911.11314.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/TAMU-VITA/ADIN">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>	
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/fatloss_cvpr20.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>In Defense of the Triplet Loss Again: Learning Robust Person Re-Identification with Fast Approximated Triplet Loss and Label Distillation</div>
 					  <div class='paper-authors'>Ye Yuan, <b>Wuyang Chen</b>, Yang Yang, Zhangyang Wang</div>
 					  <!-- <div class='paper-venue'>WACV 2020</div> -->
 					  <div class='paper-link'>
-						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1912.07863.pdf">PDF</a>
+						<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1912.07863.pdf">Paper</a>
 						<a class="btn btn-confirm" target="_blank" href="https://github.com/TAMU-VITA/FAT">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>	
 				<div class='row publication-entity'>
-					<div class='col-xs-3'>
+					<!-- <div class='col-xs-3'>
 					  <img class="paper-image" src="images/publication/abdnet_eccv19.png">
-					</div>
-					<div class='col-xs-9'>
+					</div> -->
+					<!-- <div class='col-xs-9'> -->
 					  <div class='paper-title'>ABD-Net: Attentive but Diverse Person Re-Identification</div>
 					  <div class='paper-authors'>Tianlong Chen, Shaojin Ding, Jingyi Xie, Ye Yuan, <b>Wuyang Chen</b>, Yang Yang, Zhou Ren, Zhangyang Wang</div>
 					  <div class='paper-venue'>ICCV 2019</div>
 					  <div class='paper-link'>
-							<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1908.01114.pdf">PDF</a>
+							<a class="btn btn-confirm" target="_blank" href="https://arxiv.org/pdf/1908.01114.pdf">Paper</a>
 							<a class="btn btn-confirm" target="_blank" href="https://github.com/TAMU-VITA/ABD-Net">Code</a>
 					  </div>
-					</div>
+					<!-- </div> -->
 				</div>	
 			</div>			
 		</div>
@@ -460,20 +526,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="grid3-content">
 				<ul class="graid3-ul">
 					<li class="graid3-li">
-						<a target="_blank" href="https://mlcollective.org/dlct/">Deep Learning: Classics and Trends</a> "Neural Architecture Search on ImageNet in Four GPU Hours: A Theoretically Inspired Perspective.", October 2021.
+						<a target="_blank" href="http://rali.iro.umontreal.ca/rali/?q=en/node/1222/list/2023">Séminaires RALI-OLST, Université de Montréal</a>, October 2023.
 					</li>
 					<li class="graid3-li">
-						<a target="_blank" href="https://automl-seminars.github.io/">AutoML Seminars</a> <a target="_blank" href="https://www.youtube.com/watch?v=o8V1LeZaPwU">"Neural Architecture Search on ImageNet in Four GPU Hours: A Theoretically Inspired Perspective."</a>, April 2021.
+						AIR seminar, Rafik B. Hariri Institute, Boston University, November 2022.
+					</li>
+					<!-- \item \href{https://www.simonsfoundation.org/event/mathematical-and-scientific-foundations-of-deep-learning-annual-meeting-2022/}{\ul{Mathematical and Scientific Foundations of Deep Learning Annual Meeting}} (NSF MoDL) \hfill Sep. 2022 -->
+					<li class="graid3-li">
+						<a target="_blank" href="https://www.cics.umass.edu/event/demystify-deep-network-architectures-theory-applications">College of Information and Computer Sciences, University of Massachusetts Amherst</a>, July 2022.
 					</li>
 					<li class="graid3-li">
-						CVPR’19 oral presentation "Collaborative Global-Local Networks for Memory-Eﬃcient Segmentation of Ultra-high Resolution Images.", June 2019.
+						<a target="_blank" href="https://sites.google.com/view/bcmmlseminar/">Math & Machine Learning Seminar, Boston College</a>, July 2022.
 					</li>
 					<li class="graid3-li">
-						CVPR’19 workshop on Gigapixel Videography in Computer Vision, June 2019.
+						<a target="_blank" href="https://mlcollective.org/dlct/">Deep Learning: Classics and Trends, ML Collective</a>, October 2021.
 					</li>
 					<li class="graid3-li">
+						<a target="_blank" href="https://automl-seminars.github.io/">AutoML Seminars, ELLIS</a>, April 2021.
+					</li>
+					<li class="graid3-li">
+						CVPR 2019 oral presentation talk, June 2019.
+					</li>
+					<li class="graid3-li">
+						<a target="_blank" href="https://gigavision.cn/data/news?nav=CVPR%202019%20Workshop&type=nav&t=1704410883675">Gigapixel Videography in Computer Vision (CVPR 2019)</a>, June 2019.
+					</li>
+					<!-- <li class="graid3-li">
 						Best Student Speaker and Outstanding Researcher, <a target="_blank" href="https://csst.ucla.edu">CSST program, UCLA</a>, Sep 2013.
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -485,6 +564,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>		
 			<div class="grid3-content">
 				<ul class="graid3-ul">
+					<li class="graid3-li">
+						Postdoc Researcher, UC Berkeley, June 2023 - present
+						<br>
+						Advisor: <a target="_blank" href="https://www.stat.berkeley.edu/~mmahoney/index.html">Prof. Michael Mahoney</a>
+					</li>
 					<li class="graid3-li">
 						Research Intern, Google Brain, May. 2022 - Dec. 2022
 						<br>
@@ -506,7 +590,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						Advisor: <a target="_blank" href="https://scholar.google.com/citations?user=697UEEIAAAAJ&hl=en">Dr. Xianming Liu</a>, <a target="_blank" href="https://www.linkedin.com/in/yuan-li-328bb91a">Yuan Li</a>
 					</li>
 					<li class="graid3-li">
-						Research Assistant, Visual Informatics Group, Aug. 2019 - Present
+						Research Assistant, Visual Informatics Group, Aug. 2019 - May 2023
 						<br>
 						Advisor: <a target="_blank" href="https://www.atlaswang.com/home">Prof. Zhangyang (Atlas) Wang</a>
 					</li>
@@ -520,7 +604,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<br>
 						Advisor: <a target="_blank" href="https://www.atlaswang.com/home">Prof. Zhangyang (Atlas) Wang</a>
 					</li> -->
-					<li class="graid3-li">
+					<!-- <li class="graid3-li">
 						Research Assistant, University of Science and Technology of China, Sep. 2013 - Jun. 2014
 						<br>
 						Advisor: <a target="_blank" href="http://biocomp.ustc.edu.cn/people/pi.php">Prof. Haiyan Liu</a>
@@ -529,7 +613,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						Research Intern, <a target="_blank" href="https://csst.ucla.edu">CSST program, UCLA</a>, Jun. 2013 - Sep. 2013
 						<br>
 						Advisor: <a target="_blank" href="https://yeateslab.mbi.ucla.edu">Prof. Todd O. Yeates</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 			<div class="grid3-content">
@@ -537,11 +621,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<ul class="graid3-ul">
 					<li class="graid3-li"> Workshop Organizer: <a target="_blank" href="http://www.ug2challenge.org">5th UG<sup>2</sup>+ (CVPR 2022) (Chair)</a>, <a target="_blank" href="http://cvpr2022.ug2challenge.org/program21/challenges21.html">4th UG<sup>2</sup>+ (CVPR 2021) (Chair)</a>, <a target="_blank" href="http://cvpr2022.ug2challenge.org/program20/challenges20.html">3rd UG<sup>2</sup>+ (CVPR 2020)</a>
 					</li>				
-					<li class="graid3-li"> Reviewer: ICML, ICCV, Neurips, ICLR, CVPR
+					<li class="graid3-li"> Reviewer: ICML, ICCV, Neurips, ICLR, CVPR, TPAMI, WACV, AAAI
 					</li>
 				</ul>
 				<h3>Awards and Honors:</h3>
 				<ul class="graid3-ul">
+					<li class="graid3-li"> Professional Development Award, University of Texas at Austin, 2022.
+					</li>
 					<li class="graid3-li"> Travel Award, Mathematical/Statistical approaches in DAta Science (MSDAS) Workshop, UT Dallas, 2019.
 					</li>
 					<li class="graid3-li"> Best Student Speaker and Outstanding Researcher, <a target="_blank" href="https://csst.ucla.edu">CSST program, UCLA</a>, 2013.
@@ -606,7 +692,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
 				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},800);
+				$('html,body').animate({scrollTop:$(this.hash).offset().top-50},800);
 			});
 		});	
 		var curid = 0;
